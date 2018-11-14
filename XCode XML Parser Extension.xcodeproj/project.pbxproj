@@ -10,7 +10,35 @@
 		F80ED5A9219C3EBE002B897C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80ED5A8219C3EBE002B897C /* AppDelegate.swift */; };
 		F80ED5AB219C3EBE002B897C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80ED5AA219C3EBE002B897C /* Assets.xcassets */; };
 		F80ED5AE219C3EBE002B897C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F80ED5AC219C3EBE002B897C /* MainMenu.xib */; };
+		F80ED5BD219C3ED7002B897C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80ED5BC219C3ED7002B897C /* Cocoa.framework */; };
+		F80ED5C0219C3ED7002B897C /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80ED5BF219C3ED7002B897C /* SourceEditorExtension.swift */; };
+		F80ED5C2219C3ED7002B897C /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80ED5C1219C3ED7002B897C /* SourceEditorCommand.swift */; };
+		F80ED5C7219C3ED7002B897C /* XCode Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F80ED5BA219C3ED6002B897C /* XCode Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F80ED5C5219C3ED7002B897C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F80ED59D219C3EBE002B897C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F80ED5B9219C3ED6002B897C;
+			remoteInfo = "XCode Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F80ED5CB219C3ED7002B897C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F80ED5C7219C3ED7002B897C /* XCode Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F80ED5A5219C3EBE002B897C /* XCode XML Parser Extension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XCode XML Parser Extension.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +47,12 @@
 		F80ED5AD219C3EBE002B897C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F80ED5AF219C3EBE002B897C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F80ED5B0219C3EBE002B897C /* XCode_XML_Parser_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XCode_XML_Parser_Extension.entitlements; sourceTree = "<group>"; };
+		F80ED5BA219C3ED6002B897C /* XCode Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "XCode Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80ED5BC219C3ED7002B897C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F80ED5BF219C3ED7002B897C /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		F80ED5C1219C3ED7002B897C /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		F80ED5C3219C3ED7002B897C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F80ED5C4219C3ED7002B897C /* XCode_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XCode_Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +63,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F80ED5B7219C3ED6002B897C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80ED5BD219C3ED7002B897C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				F80ED5A7219C3EBE002B897C /* XCode XML Parser Extension */,
+				F80ED5BE219C3ED7002B897C /* XCode Extension */,
+				F80ED5BB219C3ED7002B897C /* Frameworks */,
 				F80ED5A6219C3EBE002B897C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				F80ED5A5219C3EBE002B897C /* XCode XML Parser Extension.app */,
+				F80ED5BA219C3ED6002B897C /* XCode Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +105,25 @@
 			path = "XCode XML Parser Extension";
 			sourceTree = "<group>";
 		};
+		F80ED5BB219C3ED7002B897C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F80ED5BC219C3ED7002B897C /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F80ED5BE219C3ED7002B897C /* XCode Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F80ED5BF219C3ED7002B897C /* SourceEditorExtension.swift */,
+				F80ED5C1219C3ED7002B897C /* SourceEditorCommand.swift */,
+				F80ED5C3219C3ED7002B897C /* Info.plist */,
+				F80ED5C4219C3ED7002B897C /* XCode_Extension.entitlements */,
+			);
+			path = "XCode Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,15 +134,34 @@
 				F80ED5A1219C3EBE002B897C /* Sources */,
 				F80ED5A2219C3EBE002B897C /* Frameworks */,
 				F80ED5A3219C3EBE002B897C /* Resources */,
+				F80ED5CB219C3ED7002B897C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F80ED5C6219C3ED7002B897C /* PBXTargetDependency */,
 			);
 			name = "XCode XML Parser Extension";
 			productName = "XCode XML Parser Extension";
 			productReference = F80ED5A5219C3EBE002B897C /* XCode XML Parser Extension.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F80ED5B9219C3ED6002B897C /* XCode Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F80ED5C8219C3ED7002B897C /* Build configuration list for PBXNativeTarget "XCode Extension" */;
+			buildPhases = (
+				F80ED5B6219C3ED6002B897C /* Sources */,
+				F80ED5B7219C3ED6002B897C /* Frameworks */,
+				F80ED5B8219C3ED6002B897C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XCode Extension";
+			productName = "XCode Extension";
+			productReference = F80ED5BA219C3ED6002B897C /* XCode Extension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -91,6 +174,9 @@
 				ORGANIZATIONNAME = "Usama Nasar";
 				TargetAttributes = {
 					F80ED5A4219C3EBE002B897C = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					F80ED5B9219C3ED6002B897C = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -109,6 +195,7 @@
 			projectRoot = "";
 			targets = (
 				F80ED5A4219C3EBE002B897C /* XCode XML Parser Extension */,
+				F80ED5B9219C3ED6002B897C /* XCode Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +210,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F80ED5B8219C3ED6002B897C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -134,7 +228,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F80ED5B6219C3ED6002B897C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80ED5C0219C3ED7002B897C /* SourceEditorExtension.swift in Sources */,
+				F80ED5C2219C3ED7002B897C /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F80ED5C6219C3ED7002B897C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F80ED5B9219C3ED6002B897C /* XCode Extension */;
+			targetProxy = F80ED5C5219C3ED7002B897C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F80ED5AC219C3EBE002B897C /* MainMenu.xib */ = {
@@ -266,6 +377,7 @@
 		F80ED5B4219C3EBE002B897C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "XCode XML Parser Extension/XCode_XML_Parser_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -285,6 +397,7 @@
 		F80ED5B5219C3EBE002B897C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "XCode XML Parser Extension/XCode_XML_Parser_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +410,46 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.usamanasar.XCode-XML-Parser-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		F80ED5C9219C3ED7002B897C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "XCode Extension/XCode_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VQDWUV65C8;
+				INFOPLIST_FILE = "XCode Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.usamanasar.XCode-XML-Parser-Extension.XCode-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		F80ED5CA219C3ED7002B897C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "XCode Extension/XCode_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VQDWUV65C8;
+				INFOPLIST_FILE = "XCode Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.usamanasar.XCode-XML-Parser-Extension.XCode-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -318,6 +471,15 @@
 			buildConfigurations = (
 				F80ED5B4219C3EBE002B897C /* Debug */,
 				F80ED5B5219C3EBE002B897C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F80ED5C8219C3ED7002B897C /* Build configuration list for PBXNativeTarget "XCode Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F80ED5C9219C3ED7002B897C /* Debug */,
+				F80ED5CA219C3ED7002B897C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
